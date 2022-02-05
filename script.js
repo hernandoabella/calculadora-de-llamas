@@ -73,15 +73,15 @@ document.getElementById("display_flame").innerHTML = 'AMANTE';
 document.getElementById("display_flame").style.color= '#FF0080';
 }else if(ar=="A"){
         // res="AFFECTION";
-	document.getElementById("display_flame").innerHTML = 'CARIÑO';
+	document.getElementById("display_flame").innerHTML = 'AFECTO';
 	document.getElementById("display_flame").style.color= '#DBA901';
 }else if(ar=="M"){
         // res="MARRIAGE";
-	document.getElementById("display_flame").innerHTML = 'MARRIAGE';
+	document.getElementById("display_flame").innerHTML = 'CASAD@';
 	document.getElementById("display_flame").style.color= 'green';
 }else if(ar=="E"){
         // res="ENEMY";
-	document.getElementById("display_flame").innerHTML = 'Enemigo';
+	document.getElementById("display_flame").innerHTML = 'ENEMIGO';
 	document.getElementById("display_flame").style.color= 'red';
 }else if(ar=="S"){
         // res="SISTER";

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Source+Serif+4:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Rubik:wght@600&display=swap');
 
 :root{
   --color-principal: #f76a8c;
-  --fuente-titulo: 'Rowdies', cursive;
-  --fuente-texto: 'Source Serif 4', sans-serif; 
+  --fuente-titulo: 'Rubik', sans-serif;
+  --fuente-texto: 'Roboto Slab', serif; 
 }
 
 *{
@@ -143,8 +143,9 @@ body{
 }
 
 #display_flame{
-  font-size: 1rem;
-  margin: 10px 0px;
+  font-size: 2rem;
+  font-family: var(--fuente-titulo);
+  margin: 40px 0px;
   text-align: center;
 }
 
@@ -166,8 +167,8 @@ body{
 }
 
 .text-field input:focus {
-      border: thin solid #32cd32;
-      border-bottom: solid medium #32cd32;
+      border: thin solid #f76a8c;
+      border-bottom: solid medium #f76a8c;
       background-color:#fff;
   }
 
@@ -184,7 +185,7 @@ body{
   top: -10px;
   left: 15px;
   font-size: small;
-  color: #32cd32;
+  color: #f76a8c;
   background-color:#fff;
   padding:0 5px 0 5px;
 }
