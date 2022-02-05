@@ -65,36 +65,36 @@ stp=g;
 }
 if(ar=="F"){
 // res="FRIENDS";
-document.getElementById("display_flame").innerHTML = 'FRIENDS';
-document.getElementById("display_flame").style.color='blue';
+document.getElementById("display_flame").innerHTML = 'AMIGOS';
+document.getElementById("display_flame").style.color= 'blue';
 }else if(ar=="L"){
 // res="LOVER";
-document.getElementById("display_flame").innerHTML = 'LOVER';
-document.getElementById("display_flame").style.color='#FF0080';
+document.getElementById("display_flame").innerHTML = 'AMANTE';
+document.getElementById("display_flame").style.color= '#FF0080';
 }else if(ar=="A"){
-        //res="AFFECTION";
-	document.getElementById("display_flame").innerHTML = 'AFFECTION';
-	document.getElementById("display_flame").style.color='#DBA901';
+        // res="AFFECTION";
+	document.getElementById("display_flame").innerHTML = 'CARIÑO';
+	document.getElementById("display_flame").style.color= '#DBA901';
 }else if(ar=="M"){
-        //res="MARRIAGE";
+        // res="MARRIAGE";
 	document.getElementById("display_flame").innerHTML = 'MARRIAGE';
-	document.getElementById("display_flame").style.color='green';
+	document.getElementById("display_flame").style.color= 'green';
 }else if(ar=="E"){
-        //res="ENEMY";
-	document.getElementById("display_flame").innerHTML = 'ENEMY';
-	document.getElementById("display_flame").style.color='red';
+        // res="ENEMY";
+	document.getElementById("display_flame").innerHTML = 'Enemigo';
+	document.getElementById("display_flame").style.color= 'red';
 }else if(ar=="S"){
-        //res="SISTER";
+        // res="SISTER";
 	document.getElementById("display_flame").innerHTML = 'SISTER';
-	document.getElementById("display_flame").style.color='violet';
+	document.getElementById("display_flame").style.color= 'violet';
 }
-document.getElementById("nam"+1).style.display = 'block';
-document.getElementById("nam"+1).textContent= "Relationship status of " +nam + " & " +names+ " is :";
+        document.getElementById("nam"+1).style.display = 'block';
+        document.getElementById("nam"+1).textContent= "El estado civil de " + nam + " & " + names + " es:";
 }else{
         document.getElementById("nam"+1).style.display = 'none';
         count++;
         if(count==4){
-                alert("Enter other name");
+                alert("Ingresa otro nombre");
                 document.getElementById("result").style.display = 'block';
         }
 }

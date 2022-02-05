@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Source+Serif+4:wght@300&display=swap');
+
+:root{
+  --color-principal: #f76a8c;
+  --fuente-titulo: 'Rowdies', cursive;
+  --fuente-texto: 'Source Serif 4', sans-serif; 
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -5,79 +13,178 @@
 }
 
 body{
-  background-color: #e8e8e8;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  font-family: var(--fuente-texto);
 }
 
 .contenedor{
+  padding: 20px;
+  border-radius: 25px;
   width: 320px;
   background: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-h1{
-  color: #f76a8c;
-  text-align: center;
-}
-
-a{
-  color:#f76a8c;
-}
-
-img{
-  width: 100px !important;
-}
-
-.my{
-  width: 40vw;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .top{
-  font-size: 2rem;
-}
-
-.top-p{
-  color: #393e46;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.btn{
-  background: #f76a8c;
-}
-
-.btn:hover{
-  background: #eb6383;
-}
-
-.def{
-  color: #393e46;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-input{
-  border-radius: 5px;
-  text-align: center;
-  margin-left: 4%;
-  border: solid #f76a8c;
   color: #f76a8c;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: var(--fuente-titulo);
+  margin: 20px 0px;
   font-weight: bold;
-  font-size: 1.5rem;
-  height: 70px;
+  text-transform: uppercase;
 }
+
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    hsl(346, 90%, 69%) 0%,
+    hsl(346, 90%, 69%) 8%,
+    hsl(346, 90%, 69%) 92%,
+    hsl(346, 90%, 69%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #000;
+  background: #f76a8c;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
 
 #nam1{
-  font-size: 1.5rem;
-  color: #f76a8c;
-  margin-left: 5%;
+  color: #000;
+  font-size: .8em;
+  margin: 20px 0px;
+  display: block;
 }
 
 #display_flame{
-  margin-top: 2%;
-  margin-left: 8%;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 4rem;
+  font-size: 1rem;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.text-field {
+  position: relative;
+  margin: 10px 2.5px 20px 2.5px;
+}
+
+.text-field input {
+  display: inline-block;
+  border: thin solid #fafafa;
+  border-bottom: solid medium #999;
+  color: #444;
+  background-color: #fafafa;
+  padding: 10px 10px 10px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.text-field input:focus {
+      border: thin solid #32cd32;
+      border-bottom: solid medium #32cd32;
+      background-color:#fff;
+  }
+
+  .text-field label {
+  color: #999;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 10px;
+  transition: 0.2s;
+}
+
+.text-field input:focus ~ label, .text-field input:valid ~ label {
+  top: -10px;
+  left: 15px;
+  font-size: small;
+  color: #32cd32;
+  background-color:#fff;
+  padding:0 5px 0 5px;
 }

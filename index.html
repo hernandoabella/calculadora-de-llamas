@@ -1,47 +1,66 @@
 <html>
-
 <head>
 	<title>Calculadora de llamas</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://rawcdn.githack.com/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
 	<div class="contenedor">
-	<div class="row i">	
-		<div>
-			<img class="my "src="luv.svg" alt="">
-		</div>
-		<div>
-			<div class="main">
-				<h1 class="top">Calculadora de llamas</h1>
-			</div>
-			<form name=first>
-				<div class=" "id='maindiv'>
-					<div class='group'>
-						<p class="def">Ingresa los nombres: </p>
-						<input value='' name=name onkeyup=check(this) type=text class='txt' id='yname'>
-						<input value='' name=name1 onkeyup=check(this) type=text class='txt' id='pname'>
-						<div name=n1 id=nam1>Haga clic en el botón para conocer el estado de la relación:</div>
-						<div id='display_flame'></div>
-					</div>
-					<div class='but_por'>
-						<button name=calculate type="button" onclick=calc() class="btn btn-secondary btn-lg">FLAMAS</button>
-						<button type=reset onclick='clear_all()' class="btn btn-secondary btn-lg">Reiniciar</button>
-						<span align='center' id="dumdiv"></span>
-					</div>
+		<div>	
+			<div>
+				<div class="main">
+					<h1 class="top">Calculadora de llamas</h1>
 				</div>
-				<div id='result' class='clearfix'>
-					<div class='group' align='center'>
-						<div class='love_result'>
-							<span name=n1 id=nam1></span>
+				<form name="first">
+					<div class=" "id='maindiv'>
+						
+						<div class='group'>
+							<div class="text-field">
+								<input type="text" class="inputText" value='' name=name onkeyup=check(this) type=text class='txt' id='yname' autocomplete="off" required>
+								<label>Primer nombre</label>
+							</div>
+
+							<div class="text-field">
+								<input type="text" class="inputText" value='' name=name1 onkeyup=check(this) type=text class='txt' id='pname' autocomplete="off" required>
+								<label>Segundo nombre</label>
+							</div>
+							
+							<div name=n1 id=nam1>Haga clic en el botón para conocer el estado de la relación:</div>
+							<div id='display_flame'></div>
+						</div>
+						<div class='botones'>
+							<!-- botones -->
+							<button class="button-82-pushable" role="button" name="calculate" type="button" onclick=calc() class="btn btn-secondary btn-lg">
+							<span class="button-82-shadow"></span>
+							<span class="button-82-edge"></span>
+							<span class="button-82-front text">
+							<i class="fas fa-fire"></i> Flamas
+							</span>
+							</button>
+							<button class="button-82-pushable" role="button" type="reset" onclick='clear_all()' class="btn btn-secondary btn-lg">
+							<span class="button-82-shadow"></span>
+							<span class="button-82-edge"></span>
+							<span class="button-82-front text">
+							<i class="fas fa-trash-alt"></i> Reiniciar
+							</span>
+							</button>
+							<!-- botones -->
+							<span id="dumdiv"></span>
 						</div>
 					</div>
-				</div> 
-			</form>
+					<div id='result' class='clearfix'>
+						<div class='group'>
+							<div class='love_result'>
+								<span name="n1" id="nam1"></span>
+							</div>
+						</div>
+					</div> 
+				</form>
+			</div>
 		</div>
 	</div>
-	</div>
+
 
 	<script src='./script.js'></script>
 </body>
